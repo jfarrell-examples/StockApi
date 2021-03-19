@@ -1,4 +1,12 @@
-$HEADER$namespace $NAMESPACE$
+using StockApi.Data;
+
+namespace StockApi.Models
 {
-  public class $CLASS$ {$END$}
+    public class CreateStockSymbolResult
+    {
+        public bool SymbolExists { get; set; }
+        
+        // keeping the example brief so reusing a class which already exists for the context
+        public StockAveragePrice StockInstance { get; set; }
+    }
 }

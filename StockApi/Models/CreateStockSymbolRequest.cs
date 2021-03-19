@@ -1,4 +1,8 @@
-$HEADER$namespace $NAMESPACE$
+namespace StockApi.Models
 {
-  public class $CLASS$ {$END$}
+    public class CreateStockSymbolRequest
+    {
+        public string Symbol { get; set; }
+        public decimal CurrentPrice { get; set; }
+    }
 }

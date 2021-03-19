@@ -1,6 +1,8 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Threading;
+using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
 namespace StockApi.Data
@@ -14,7 +16,6 @@ namespace StockApi.Data
 
         public StockAppContext(DbContextOptions<StockAppContext> options) : base(options)
         {
-            
         }
     }
 
@@ -24,12 +25,16 @@ namespace StockApi.Data
         DbSet<StockMaxPrice> MaxPrices { get; set; }
         DbSet<StockMinPrice> MinPrices { get; set; }
         DbSet<StockPriceChange> PriceChanges { get; set; }
+
+        Task<int> SaveChangesAsync(CancellationToken token = default);
     }
 
     [Table("StockAveragePrices")]
     public class StockAveragePrice
     {
         [Key]
+        public Guid Id { get; set; }
+        
         public string Symbol { get; set; }
         
         public int TotalEntries { get; set; }

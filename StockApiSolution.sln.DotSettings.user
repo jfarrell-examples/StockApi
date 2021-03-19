@@ -5,9 +5,10 @@
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6e8f5474_002D0f8a_002D41a5_002Dba77_002D978084ae2e33/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="given_an_instance_of_stock_controller_to_read_from" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::11157A15-E5EB-4A9E-A5CF-078AF0294C2B::net5.0::StockApi.Tests.given_an_instance_of_stock_controller_to_read_from&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::11157A15-E5EB-4A9E-A5CF-078AF0294C2B::net5.0::StockApi.Tests.given_an_instance_of_stock_controller_wtih_create_called.assert_that_if_the_model_state_is_not_valid_a_bad_request_result_is_returned&lt;/TestId&gt;
-    &lt;TestId&gt;xUnit::11157A15-E5EB-4A9E-A5CF-078AF0294C2B::net5.0::StockApi.Tests.given_an_instance_of_stock_controller_wtih_create_called.assert_that_symbol_create_service_is_called_one_time_only&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
+  &lt;Or&gt;
+    &lt;Project Location="/home/jfarrell/Projects/dotnet/v5/StockApi/StockApi.Tests" Presentation="&amp;lt;StockApi.Tests&amp;gt;" /&gt;
+    &lt;TestAncestor&gt;
+      &lt;TestId&gt;xUnit::11157A15-E5EB-4A9E-A5CF-078AF0294C2B::net5.0::StockApi.Tests.given_an_instance_of_create_stock_symbol_service&lt;/TestId&gt;
+    &lt;/TestAncestor&gt;
+  &lt;/Or&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
